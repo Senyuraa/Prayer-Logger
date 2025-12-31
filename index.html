@@ -2,21 +2,90 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Login • Prayer Tracker</title>
+  <title>Prayer Tracker</title>
+
+  <!-- Premium Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="auth-body">
 
-<div class="auth-card">
-  <h1>🕌 Prayer Tracker</h1>
-  <p class="subtitle">Stay consistent. Stay connected.</p>
+<!-- HERO SECTION -->
+<section class="auth-hero">
+  <div class="auth-card glass">
 
-  <input type="email" id="email" placeholder="Email">
-  <input type="password" id="password" placeholder="Password">
+    <h1>🕌 Prayer Tracker</h1>
+    <p class="tagline">Stay consistent. Stay connected.</p>
 
-  <button onclick="login()">Login</button>
-  <button class="secondary" onclick="signup()">Create Account</button>
+    <div class="auth-inputs">
+      <input type="email" id="email" placeholder="Email address">
+      <input type="password" id="password" placeholder="Password">
+    </div>
+
+    <div class="auth-actions">
+      <button class="btn primary" onclick="login()">Login</button>
+      <button class="btn secondary" onclick="signup()">Create Account</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- BIG FOOTER (UBEREATS STYLE) -->
+<footer class="auth-footer">
+  <div class="footer-inner">
+
+    <div class="footer-col">
+      <h3>Prayer Tracker</h3>
+      <p>A mindful way to build discipline, consistency, and spiritual accountability.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Product</h4>
+      <a href="#">Features</a>
+      <a href="#">Analytics</a>
+      <a href="#">Privacy</a>
+    </div>
+    <div class="footer-col">
+  <h4>Social</h4>
+
+  <div class="social-links">
+    <a href="https://github.com/Senyuraa" target="_blank" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+
+    <a href="https://x.com/frfraymaan" target="_blank" aria-label="X">
+      <i class="fab fa-x-twitter"></i>
+    </a>
+
+    <a href="https://www.youtube.com/@ayymaann" target="_blank" aria-label="YouTube">
+      <i class="fab fa-youtube"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/frfraymaaan/" target="_blank" aria-label="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+  </div>
 </div>
+
+
+<div class="footer-col">
+  <h4>Support</h4>
+  <a href="mailto:aymaanworks@gmail.com?subject=Prayer%20Tracker%20Help">Help Center</a>
+  <a href="mailto:aymaanworks@gmail.com?subject=Prayer%20Tracker%20Contact">Contact</a>
+  <a href="mailto:aymaanworks@gmail.com?subject=Prayer%20Tracker%20Feedback">Feedback</a>
+</div>
+
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 Prayer Tracker. All rights reserved.
+  </div>
+  
+</footer>
+
 
 <script type="module" src="auth.js"></script>
 </body>

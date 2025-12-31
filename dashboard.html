@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prayer Analytics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-glow"></div>
+
+<header class="top-header glass">
+  <h1>🕌 Prayer Analytics</h1>
+  <p>Discipline • Consistency • Accountability</p>
+</header>
+
+<div class="dashboard">
+
+  <!-- LEFT PANEL -->
+  <div class="left-panel glass">
+
+    <div class="prayer"><span>Fajr</span><input id="fajr" type="checkbox"><label for="fajr"></label></div>
+    <div class="prayer"><span>Zuhr</span><input id="zuhr" type="checkbox"><label for="zuhr"></label></div>
+    <div class="prayer"><span>Asr</span><input id="asr" type="checkbox"><label for="asr"></label></div>
+    <div class="prayer"><span>Maghrib</span><input id="maghrib" type="checkbox"><label for="maghrib"></label></div>
+    <div class="prayer"><span>Isha</span><input id="isha" type="checkbox"><label for="isha"></label></div>
+
+    <div class="score-box">
+      <div class="circle">
+        <span id="score">0%</span>
+      </div>
+      <p>Today’s Completion</p>
+    </div>
+
+    <button class="save-btn" onclick="savePrayers()">Save Today</button>
+
+  </div>
+
+  <!-- RIGHT PANEL -->
+  <div class="right-panel glass">
+    <h3>📊 Monthly Consistency</h3>
+    <canvas id="monthlyChart"></canvas>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
